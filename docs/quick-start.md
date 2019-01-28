@@ -147,3 +147,4 @@ continue with [setup][].
 [setup]: user/index.md (Atomist Setup)
 something
 something
+something
