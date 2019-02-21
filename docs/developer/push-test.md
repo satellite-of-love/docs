@@ -7,7 +7,7 @@ and drive delivery. Push tests are often reused, so it is good practice to extra
 export push test constants.
 
 [API Doc](https://atomist.github.io/sdm/interfaces/_lib_api_mapping_pushtest_.pushtest.html)
-
+ 
 Examples include:
 
 *  [Is this a Java project?](https://github.com/atomist/sdm-pack-checkstyle/blob/2399fe8bb44e84b96dad38acf3c20fa437a405a1/lib/support/checkstyleReviewer.ts#L90)
