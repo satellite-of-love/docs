@@ -35,7 +35,7 @@ who invoked the command.
 Armed with this information, we can write our command listener
 function.
 
-<!-- atomist:code-snippet:start=lib/commands/helloWorldPoo.ts#helloWorldCommand -->
+<!-- atomist:code-snippet:start=lib/command/helloWorldPoo.ts#helloWorldCommand -->
 ```typescript
 import { HandlerResult, NoParameters } from "@atomist/automation-client";
 import { CommandListenerInvocation } from "@atomist/sdm";
@@ -62,7 +62,7 @@ The next thing to do is register your command in your SDM.  First, we
 create a `CommandHandlerRegistration`.
 
 
-<!-- atomist:code-snippet:start=lib/commands/helloWorld.ts#helloWorldCommandRegistration -->
+<!-- atomist:code-snippet:start=lib/command/helloWorld.ts#helloWorldCommandRegistration -->
 ```typescript
 import { CommandHandlerRegistration } from "@atomist/sdm";
 const helloWorldCommand: CommandHandlerRegistration = {
@@ -87,7 +87,7 @@ Once we have the registration, we can add the command to our SDM
 object.
 
 
-<!-- atomist:code-snippet:start=lib/commands/helloWorld.ts#helloWorldCommand -->
+<!-- atomist:code-snippet:start=lib/command/helloWorld.ts#helloWorldCommand -->
 ```typescript
 import { Configuration } from "@atomist/automation-client";
 import {
@@ -130,7 +130,7 @@ and then in another terminal run the `hello` command:
 atomist hello
 ```
 
-and the SDM should respond in the same terminal.
+and the SDM should respond in the same terminal. la la la a change
 
 This will only work while the SDM is running in local mode. To check this, run `atomist show sdms` and see whether your SDM is in the list.
 
