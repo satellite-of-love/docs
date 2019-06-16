@@ -35,6 +35,7 @@ who invoked the command.
 Armed with this information, we can write our command listener
 function.
 
+<!-- atomist:code-snippet:start=lib/commands/helloWorld.ts#helloWorldCommand -->
 ```typescript
 import { HandlerResult, NoParameters } from "@atomist/automation-client";
 import { CommandListenerInvocation } from "@atomist/sdm";
@@ -42,6 +43,7 @@ export async function helloWorldListener(ci: CommandListenerInvocation<NoParamet
     return ci.addressChannels("Hello, world");
 }
 ```
+<!-- atomist:code-snippet:end-->
 
 You can see the `CommandListenerInvocation` has an `addressChannels` property,
 which sends a message to the appropriate places -- in this case, to wherever the
@@ -59,6 +61,8 @@ command execution is considered unsuccessful.
 The next thing to do is register your command in your SDM.  First, we
 create a `CommandHandlerRegistration`.
 
+
+<!-- atomist:code-snippet:start=lib/commands/helloWorld.ts#helloWorldCommandRegistration -->
 ```typescript
 import { CommandHandlerRegistration } from "@atomist/sdm";
 const helloWorldCommand: CommandHandlerRegistration = {
@@ -71,6 +75,7 @@ const helloWorldCommand: CommandHandlerRegistration = {
     },
 };
 ```
+<!-- atomist:code-snippet:end-->
 
 We provide a unique name and description in the registration.  The
 value of the `intent` property defines the command you enter to invoke
@@ -81,6 +86,8 @@ the command to `helloWorldCommand.listener(ci)`.
 Once we have the registration, we can add the command to our SDM
 object.
 
+
+<!-- atomist:code-snippet:start=lib/commands/helloWorld.ts#helloWorldCommand -->
 ```typescript
 import { Configuration } from "@atomist/automation-client";
 import {
@@ -103,9 +110,7 @@ export const configuration: Configuration = {
     postProcessors: [configureSdm(machine)],
 };
 ```
-
-The `configuration` object should be exported from the `index.ts` of
-your SDM.
+<!-- atomist:code-snippet:end-->
 
 ### Run your command
 [command line]: #run-your-command
