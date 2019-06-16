@@ -35,7 +35,7 @@ who invoked the command.
 Armed with this information, we can write our command listener
 function.
 
-<!-- atomist:code-snippet:start=lib/commands/helloWorld.ts#helloWorldCommand -->
+<!-- atomist:code-snippet:start=lib/commands/helloWorldPoo.ts#helloWorldCommand -->
 ```typescript
 import { HandlerResult, NoParameters } from "@atomist/automation-client";
 import { CommandListenerInvocation } from "@atomist/sdm";
