@@ -62,7 +62,6 @@ command execution is considered unsuccessful.
 The next thing to do is register your command in your SDM.  First, we
 create a `CommandHandlerRegistration`.
 
-
 <!-- atomist:code-snippet:start=lib/command/helloWorld.ts#helloWorldCommandRegistration -->
 ```typescript
 import { CommandHandlerRegistration } from "@atomist/sdm";
@@ -88,7 +87,6 @@ the command to `helloWorldCommand.listener(ci)`.
 
 Once we have the registration, we can add the command to our SDM
 object.
-
 
 <!-- atomist:code-snippet:start=lib/command/helloWorld.ts#helloWorldCommand -->
 ```typescript
