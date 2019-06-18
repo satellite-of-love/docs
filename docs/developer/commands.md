@@ -92,7 +92,7 @@ object.
 import { Configuration } from "@atomist/automation-client";
 import {
     SoftwareDeliveryMachine,
-    SoftwareDeliveryMachineConfiguration,
+    SoftwareDeliveryMachineConfiguration, (this should go away)
 } from "@atomist/sdm";
 import {
     createSoftwareDeliveryMachine,
