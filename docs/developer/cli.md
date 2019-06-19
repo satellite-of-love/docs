@@ -4,6 +4,8 @@ In [local mode][local], the `atomist` command line runs commands in your SDM.
 
 ## help
 
+a different file that matters
+
 Run `atomist --help` to see a list of options. Since `atomist` can run multi-word commands,
 only the first word of each is listed in the help. Drill down by asking for more specific help.
 
