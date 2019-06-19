@@ -63,7 +63,6 @@ The next thing to do is register your command in your SDM.  First, we
 create a `CommandHandlerRegistration`.
 
 <!-- atomist:code-snippet:start=lib/command/helloWorld.ts#helloWorldCommandRegistration -->
-
 ```typescript
 import { CommandHandlerRegistration } from "@atomist/sdm";
 
@@ -71,7 +70,7 @@ export const helloWorldCommand: CommandHandlerRegistration = {
     name: "HelloWorld",
     description: "Responds with a friendly greeting to everyone",
     intent: "hello",
-    listener: async ci => { ykjhljkhlj
+    listener: async ci => {
         await ci.addressChannels("Hello, world");
         return { code: 0 };
     },
@@ -100,6 +99,7 @@ export async function helloWorldListener(ci: CommandListenerInvocation<NoParamet
 }
 ```
 <!-- atomist:docs-sdm:codeSnippetInline: Snippet 'helloWorldCommand' found in https://raw.githubusercontent.com/atomist/samples/master/lib/command/helloWorld.ts -->
+<div class="sample-code"><a href="https://github.com/atomist/samples/tree/master/lib/command/helloWorld.ts#L28-L33" target="_blank">Source</a></div>
 <!-- atomist:code-snippet:end -->
 
 ### Run your command
