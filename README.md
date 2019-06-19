@@ -10,6 +10,8 @@ Atomist documentation at [https://docs.atomist.com/][atomist-doc].
 
 The documentation is generated from markdown using [MkDocs][mkdocs].
 
+<div class="sample-code"><a href="https://github.com/atomist/samples/tree/master/lib/command/helloWorld.ts#L37-L47" target="_blank">Source</a></div>
+
 [mkdocs]: http://www.mkdocs.org/
 
 ## Editing

@@ -63,6 +63,7 @@ The next thing to do is register your command in your SDM.  First, we
 create a `CommandHandlerRegistration`.
 
 <!-- atomist:code-snippet:start=lib/command/helloWorld.ts#helloWorldCommandRegistration -->
+
 ```typescript
 import { CommandHandlerRegistration } from "@atomist/sdm";
 
@@ -77,6 +78,7 @@ export const helloWorldCommand: CommandHandlerRegistration = {
 };
 ```
 <!-- atomist:docs-sdm:codeSnippetInline: Snippet 'helloWorldCommandRegistration' found in https://raw.githubusercontent.com/atomist/samples/master/lib/command/helloWorld.ts -->
+<div class="sample-code"><a href="https://github.com/atomist/samples/tree/master/lib/command/helloWorld.ts#L37-L47" target="_blank">Source</a></div>
 <!-- atomist:code-snippet:end -->
 
 We provide a unique name and description in the registration.  The
