@@ -71,7 +71,7 @@ export const helloWorldCommand: CommandHandlerRegistration = {
     name: "HelloWorld",
     description: "Responds with a friendly greeting to everyone",
     intent: "hello",
-    listener: async ci => {
+    listener: async ci => { ykjhljkhlj
         await ci.addressChannels("Hello, world");
         return { code: 0 };
     },
