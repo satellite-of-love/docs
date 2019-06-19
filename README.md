@@ -10,6 +10,8 @@ Atomist documentation at [https://docs.atomist.com/][atomist-doc].
 
 The documentation is generated from markdown using [MkDocs][mkdocs].
 
+this is not the file of interest
+
 [mkdocs]: http://www.mkdocs.org/
 
 ## Editing
